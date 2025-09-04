@@ -1,8 +1,8 @@
 import useStateComponent from "../hooks/useStateComponent";
-import { CounterProvider } from "../hooks/useContextComponent";
 import Counter from "../components/counter";
 import { lazy, Suspense } from "react";
-// import CounterContext from '../components/ContextCounter';
+import { CounterProvider } from "../hooks/useContextComponent";
+
 const CounterContext = lazy(() => import("../components/ContextCounter"));
 
 export default function PageCounter() {
